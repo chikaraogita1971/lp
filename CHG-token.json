@@ -1,1 +1,15 @@
-
+{
+  "chainId": 101,
+  "address": "6c6Qh4aXeTwNZ7jZsXSoNreujVgxiszV3MK4UR3xpump",
+  "symbol": "CHG",
+  "name": "chikaraogita",
+  "decimals": 9,
+  "logoURI": "https://chikaraogita1971.github.io/lp/images/y4eMWZLY_400x400.jpg",
+  "tags": ["utility", "experimental"],
+  "extensions": {
+    "website": "https://chikaraogita1971.github.io/lp/",
+    "whitepaper": "https://chikaraogita1971.github.io/lp/whitepaper.html",
+    "twitter": "https://twitter.com/chikaraogita",
+    "description": "CHG は、Solana 上で開発中の実験的トークンです。透明性とシンプルさを重視し、コミュニティ主導で Web3 ユーティリティを検証します。"
+  }
+}

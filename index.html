@@ -79,6 +79,43 @@
       background: #eee;
     }
 
+    /* Token Info */
+    .token-box {
+      max-width: 600px;
+      margin: 0 auto 24px;
+      text-align: left;
+    }
+
+    .token-label {
+      font-weight: bold;
+      display: block;
+      margin-bottom: 8px;
+    }
+
+    .token-ca {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      background: #f4f6f8;
+      padding: 12px 16px;
+      border-radius: 6px;
+    }
+
+    .token-ca code {
+      font-size: 0.95rem;
+      word-break: break-all;
+    }
+
+    .token-ca button {
+      padding: 6px 12px;
+      border: none;
+      background: #0d6efd;
+      color: #fff;
+      border-radius: 4px;
+      cursor: pointer;
+      font-size: 0.9rem;
+    }
+
     @media (min-width: 768px) {
       header {
         padding: 100px 24px;
@@ -121,6 +158,26 @@
       </ul>
     </section>
 
+    <section id="token">
+      <h2>Token Info</h2>
+
+      <div class="token-box">
+        <span class="token-label">Contract Address (Test)</span>
+        <div class="token-ca">
+          <code id="ca">CHG</code>
+          <button onclick="copyCA()">Copy</button>
+        </div>
+      </div>
+
+      <ul>
+        <li><strong>Token Name:</strong> CHG (Test)</li>
+        <li><strong>Symbol:</strong> CHG</li>
+        <li><strong>Blockchain:</strong> Solana</li>
+        <li><strong>Token Standard:</strong> SPL Token</li>
+        <li><strong>Status:</strong> Test / Concept Stage</li>
+      </ul>
+    </section>
+
     <section id="contact">
       <h2>Contact</h2>
       <p>Solana・Web3・暗号資産関連のご相談はこちら。</p>
@@ -131,6 +188,15 @@
   <footer>
     <p>© 2026 荻田力 / chikaraogita</p>
   </footer>
+
+  <script>
+    function copyCA() {
+      const caText = document.getElementById("ca").innerText;
+      navigator.clipboard.writeText(caText).then(() => {
+        alert("Contract Address copied: " + caText);
+      });
+    }
+  </script>
 
 </body>
 </html>
